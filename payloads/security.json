@@ -1,0 +1,64 @@
+{
+  "created": "2019-04-24T12:57:22.237366105Z",
+  "top_severity": "High",
+  "watch_name": "atom",
+  "policy_name": "atom-sec-policy",
+  "issues": [
+    {
+      "severity": "High",
+      "type": "security",
+      "provider": "JFrog",
+      "created": "2019-02-17T09:32:55.548Z",
+      "summary": "A prototype pollution vulnerability was found in lodash <4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+      "description": "A prototype pollution vulnerability was found in lodash <4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+      "impacted_artifacts": [
+        {
+          "name": "lodash-3.10.1.tgz",
+          "display_name": "lodash:3.10.1",
+          "path": "artifactory/npm-atom-local/lodash/-/",
+          "pkg_type": "Npm",
+          "sha256": "4578a0a45fae7bfc8f0ea464e9ca3b1330ad6d2c4696d61dc7e7afdcf4e2c925",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "4578a0a45fae7bfc8f0ea464e9ca3b1330ad6d2c4696d61dc7e7afdcf4e2c925",
+          "infected_files": [
+            {
+              "path": "",
+              "depth": 0,
+              "pkg_type": "Generic"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2018-16487"
+    },
+    {
+      "severity": "Medium",
+      "type": "security",
+      "provider": "Snyk",
+      "created": "2018-03-30T01:30:02.483Z",
+      "summary": "Prototype Pollution",
+      "description": "Prototype Pollution",
+      "impacted_artifacts": [
+        {
+          "name": "lodash-3.10.1.tgz",
+          "display_name": "lodash:3.10.1",
+          "path": "artifactory/npm-atom-local/lodash/-/",
+          "pkg_type": "Npm",
+          "sha256": "4578a0a45fae7bfc8f0ea464e9ca3b1330ad6d2c4696d61dc7e7afdcf4e2c925",
+          "sha1": "",
+          "depth": 0,
+          "parent_sha": "4578a0a45fae7bfc8f0ea464e9ca3b1330ad6d2c4696d61dc7e7afdcf4e2c925",
+          "infected_files": [
+            {
+              "path": "",
+              "depth": 0,
+              "pkg_type": "Generic"
+            }
+          ]
+        }
+      ],
+      "cve": "CVE-2018-3721"
+    }
+  ]
+}
