@@ -2,9 +2,9 @@
  * xray-incoming.js
  * Add JFrog Xray notifications via a new WebHook in Rocket.Chat
  * @license MIT
- * @version 0.1.0
+ * @version 0.2.0
  * @author  CrazyMax, https://github.com/crazy-max
- * @updated 2019-04-24
+ * @updated 2019-05-09
  * @link    https://github.com/crazy-max/rocketchat-xray
  */
 
@@ -34,7 +34,7 @@ class Script {
       content: {
         username: USERNAME,
         icon_url: AVATAR_URL,
-        text: `${data.issues.length} violation(s) for watch **${data.watch_name}** and policy **${data.policy_name}** were found for **${data.issues[0].impacted_artifacts[0].name}**`,
+        text: `${data.issues.length} violation(s) for watch **${data.watch_name}** and policy **${data.policy_name}** were found for **${data.issues[0].impacted_artifacts[0].path}${data.issues[0].impacted_artifacts[0].name}**`,
         attachments: [{
           text: attachmentText,
           color: attachmentColor
